@@ -12434,15 +12434,25 @@ svg {
   font-weight: 300;
 }
 @media screen and (min-width: 320px) and (max-width: 520px) {
-  .owl-item {
-    width: 282px;
+  .owl-item{
+    width:100% !important;
   }
+  .owl-carousel .owl-stage {
+    
+    display: flex !important;
+}
+.owl-stage{
+  margin-left: 117px;
+}
+.item{
+width:276px
+} 
 
-  .owl-item .item {
-    width: 282px;
-  }
   .page-title {
     font-size: 15px;
+  }
+  .owl-carousel.owl-loaded {
+    display: block !important;
   }
   /* .tab-pane{
   display: flex;
